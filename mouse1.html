@@ -7,26 +7,21 @@
   </head>
   <body>
     <a-scene
-      embedded
-      mindar-image="imageTargetSrc:./targetdeqrdemouse1.mind; autoStart: true"
+      mindar-image="qr y targets/targetdeqrdemouse1.mind"
       color-space="sRGB"
       renderer="colorManagement: true; physicallyCorrectLights: true"
-      vr-mode-ui="enabled: false"
+      vr-mode-ui="enabled: true"
       device-orientation-permission-ui="enabled: false"
     >
-      <a-assets timeout="15000">
-        <a-asset-item id="greatWaveModel" src="./Mouseergonómico-scene.gltf"></a-asset-item>
-      </a-assets>
-
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-entity
-          gltf-model="#greatWaveModel"
-          rotation="0 180 0"
-          position="0 -2 1"
+        <a-gltf-model
+          rotation="0 100 0"
+          position="0 -1 0"
           scale="1 1 1"
-        ></a-entity>
+          src="Mouse gamer">
+        </a-gltf-model>
       </a-entity>
     </a-scene>
   </body>
